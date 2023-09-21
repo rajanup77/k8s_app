@@ -5,15 +5,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: javaweb
+      app: javaweb-deploy
   replicas: 2
   template:
     metadata:
       labels:
-        app: javaweb
+        app: javaweb-app
     spec:
       containers:
-      - name: java_web
+      - name: javaweb
         image: rajanup77/java_web:latest
         ports:
         - containerPort: 8080
