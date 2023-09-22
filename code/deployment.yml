@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: bhawishya/hello-world
+        image: nginx
         ports:
         - containerPort: 8080
 
