@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: javaweb
+  name: webappDeployment
 spec:
   selector:
     matchLabels:
-      app: javaweb-deploy
+      app: webapp
   replicas: 2
   template:
     metadata:
       labels:
-        app: javaweb-app
+        app: webapp
     spec:
       containers:
-      - name: javaweb
-        image: rajanup77/java_web:latest
+      - name: webappContainer
+        image: yeasy/simple-web
         ports:
         - containerPort: 8080
 
