@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: java-webapp
+  name: javawebapp
   namespace: argocd
 spec:
   project: default
@@ -12,7 +12,7 @@ spec:
     path: code
   destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: argocd
 
   syncPolicy:
     syncOptions:
