@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: nginx
+        image: rajanup77/amd-nginx
         ports:
         - containerPort: 8080
 
