@@ -13,7 +13,7 @@ spec:
         app: webapp
     spec:
       containers:
-      - name: webappContainer
+      - name: webapp
         image: yeasy/simple-web
         ports:
         - containerPort: 8080
